@@ -1,4 +1,4 @@
-import React, {useReducer, createContext, useEffect} from 'react'
+import React, {useReducer, createContext} from 'react'
 import contextReducer from './contextReducer';
 
 const initialState = JSON.parse(localStorage.getItem('transactions')) || [];
