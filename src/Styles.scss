@@ -1,0 +1,29 @@
+.ip{
+    height: 87vh;
+}
+.inc,.exp{
+    background-color: rgb(186, 186, 186);
+    height: 47vh;
+}
+.list-tx{
+    height: 250px;
+    overflow-y: scroll;
+}
+.list-tx::-webkit-scrollbar {
+    width: 0.5em;
+    background-color: rgba(240, 240, 240, 0.669);
+  }
+   
+.list-tx::-webkit-scrollbar-thumb {
+    background-color: rgba(169, 169, 169, 0.669);
+    border-radius: 10px;
+  
+  }
+select,select:active, select:focus{
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid rgb(8, 88, 22);
+}
+option{
+    background-color: rgb(231, 231, 231);
+}

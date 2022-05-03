@@ -2,14 +2,12 @@ import React, {useContext} from 'react'
 import { IETracker } from '../context/context';
 const Header = () => {
 
-  const {balance, incomeBalance,expenseBalance} = useContext(IETracker);
+  const {balance} = useContext(IETracker);
 
   return (
-    <div>
-        <h3>IE Dashboard</h3>
-        <p><strong>Balance</strong> ${balance}</p>
-        <p><strong>Income</strong> ${incomeBalance}</p>
-        <p><strong>Expense</strong> ${expenseBalance}</p>
+    <div className="row text-center p-4">
+        <h3 className='text-secondary'>IE Dashboard</h3>
+        <h3 className='text-success'>&#8377; {balance}</h3>
     </div>
   )
 }

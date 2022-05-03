@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Gift"
+    },
+    {
+        "id": 2,
+        "name": "Salary"
+    },
+    {
+        "id": 3,
+        "name": "Side business"
+    },
+    {
+        "id": 4,
+        "name": "Interest"
+    },
+    {
+        "id": 5,
+        "name": "Sold product"
+    },
+    {
+        "id": 6,
+        "name": "Others"
+    }
+]
