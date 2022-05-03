@@ -1,6 +1,8 @@
 import React, {useContext, useState} from 'react'
 import { IETracker } from '../context/context';
-import { TiDelete, TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowAltCircleUp, faArrowAltCircleDown, faMinusCircle } from '@fortawesome/fontawesome-free-solid'
+
 
 const ListTransaction = () => {
 
@@ -19,19 +21,19 @@ const [search, setSearch] = useState('')
                 <div key={tx.id} className="list-group my-2">
                   <div className='list-group-item d-flex justify-content-center align-items-center'>
                     <div className='col-2'>
-                      {tx.type === "Expense"? <TiArrowSortedDown className='text-danger fs-2'/> : <TiArrowSortedUp className='fs-2 text-success'/>}
+                      {tx.type === "Expense"?<FontAwesomeIcon icon={faArrowAltCircleDown}  className='text-danger fs-4'/>: <FontAwesomeIcon icon={faArrowAltCircleUp}  className='text-success fs-4'/>}
                     </div>
                     <div className='d-grid col-7'>
                     <span>{tx.reason}-{tx.category}</span>
                     <span>{tx.date}</span>
                     </div>
                     <p className='col-2'>&#8377; {tx.amount}</p>
-                  <TiDelete onClick={()=>deleteTransaction(tx.id)} className="col-1"/>
+                    <FontAwesomeIcon icon={faMinusCircle} onClick={()=>deleteTransaction(tx.id)} className="col-1 fs-4" />
                   </div>
                 </div>
             )
         })}
-        </div>
+        </div>    
     </div>
   )
 }

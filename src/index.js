@@ -5,8 +5,8 @@ import App from './App';
 import { Provider } from './context/context';
 import './Styles.scss'
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
-// createRoot(root).render(<App />);
 root.render(
   <Provider>
     <App />

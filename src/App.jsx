@@ -7,7 +7,7 @@ import ExpenseArea from './components/ExpenseArea';
 
 const App = () => {
   return (
-    <div className='row m-2 d-flex justify-content-evenly align-items-center'>
+    <div className='row m-2 justify-content-evenly align-items-center'>
       <div className='card col-md-5 ip'>
         <Header/>
         <InputPanel/>
