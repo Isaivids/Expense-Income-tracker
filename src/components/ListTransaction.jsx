@@ -1,7 +1,6 @@
 import React, {useContext, useState} from 'react'
 import { IETracker } from '../context/context';
-import { FaMinusCircle} from 'react-icons/fa'
-import {  TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti'
+import { TiDelete, TiArrowSortedDown, TiArrowSortedUp } from 'react-icons/ti'
 
 const ListTransaction = () => {
 
@@ -27,7 +26,7 @@ const [search, setSearch] = useState('')
                     <span>{tx.date}</span>
                     </div>
                     <p className='col-2'>&#8377; {tx.amount}</p>
-                  <FaMinusCircle onClick={()=>deleteTransaction(tx.id)} className="col-1"/>
+                  <TiDelete onClick={()=>deleteTransaction(tx.id)} className="col-1"/>
                   </div>
                 </div>
             )
